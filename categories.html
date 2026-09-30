@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categories — Form Meets Function Journal</title>
+  <meta name="description" content="Explore all categories on Form Meets Function — interior design, architecture, materials, lighting, space planning, and the principles of good design." />
+  <link rel="canonical" href="https://formmeetsfunction.blog/categories.html" />
+  <meta property="og:title" content="Categories — Form Meets Function Journal" />
+  <meta property="og:description" content="Browse every section of Form Meets Function: interior design, architecture, materials, lighting, space planning, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f9f7f4;
+      --paper-alt: #f2efe9;
+      --accent: #9b6b4b;
+      --accent-dark: #7a5238;
+      --border: #e2ddd6;
+      --muted: #6b6560;
+      --white: #ffffff;
+      --radius: 3px;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+      --max-width: 1200px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      flex-wrap: wrap;
+      align-items: center;
+      list-style: none;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      font-weight: 500;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ---------- PAGE HERO ---------- */
+    .page-hero {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 0 3rem;
+    }
+
+    .page-hero-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+
+    .page-hero .eyebrow {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .page-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .page-hero .lede {
+      font-size: 1.2rem;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: var(--font-serif);
+    }
+
+    .page-hero .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 1.25rem;
+      font-family: var(--font-sans);
+    }
+
+    /* ---------- CATEGORIES SECTION ---------- */
+    .categories-section {
+      padding: 3.5rem 0 2rem;
+    }
+
+    .categories-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3rem;
+    }
+
+    .section-intro h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-intro p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* ---------- CATEGORY GRID ---------- */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .category-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem 1.75rem;
+      transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .category-card:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+      transform: translateY(-3px);
+      border-color: #d5cfc7;
+    }
+
+    .category-card:hover::before {
+      opacity: 1;
+    }
+
+    .category-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      line-height: 1;
+      display: block;
+    }
+
+    .category-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .category-card h3 a {
+      color: var(--ink);
+    }
+
+    .category-card h3 a:hover {
+      color: var(--accent);
+    }
+
+    .category-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .category-card .post-count {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .category-card .read-more {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+      align-self: flex-start;
+      padding-bottom: 2px;
+    }
+
+    .category-card .read-more:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .category-card .read-more .arrow {
+      transition: transform 0.2s;
+      font-size: 1rem;
+    }
+
+    .category-card .read-more:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    /* ---------- FEATURED CATEGORY (WIDE) ---------- */
+    .category-featured {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+      margin-bottom: 0.5rem;
+    }
+
+    .category-featured:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+      transform: translateY(-3px);
+    }
+
+    .category-featured .featured-content {
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .category-featured .featured-content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .category-featured .featured-content h3 a {
+      color: var(--ink);
+    }
+
+    .category-featured .featured-content h3 a:hover {
+      color: var(--accent);
+    }
+
+    .category-featured .featured-content p {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .category-featured .featured-image {
+      background: var(--paper-alt);
+      min-height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: var(--accent);
+      opacity: 0.5;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-featured .featured-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(155, 107, 75, 0.05), rgba(155, 107, 75, 0.15));
+    }
+
+    /* ---------- NEWSLETTER / CTA STRIP ---------- */
+    .category-cta {
+      background: var(--paper-alt);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 2.5rem;
+      border: 1px solid var(--border);
+    }
+
+    .category-cta h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .category-cta p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: var(--ink);
+      color: var(--white);
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-sans);
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .btn--outline {
+      background: transparent;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+    }
+
+    .btn--outline:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #cfc9c2;
+      padding: 3rem 0 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-grid h5 {
+      color: var(--white);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid ul li a {
+      color: #a8a29c;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid ul li a:hover {
+      color: var(--white);
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand span {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #8a847e;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2e2a27;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: #7a746e;
+    }
+
+    .footer-bottom a {
+      color: #7a746e;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--white);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .category-featured {
+        grid-template-columns: 1fr;
+      }
+
+      .category-featured .featured-image {
+        min-height: 180px;
+        order: -1;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .page-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .page-hero .lede {
+        font-size: 1.05rem;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav {
+        gap: 1rem;
+        font-size: 0.78rem;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .category-featured .featured-content {
+        padding: 1.75rem 1.5rem;
+      }
+
+      .category-featured .featured-content h3 {
+        font-size: 1.4rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .page-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .categories-inner {
+        padding: 0 1rem;
+      }
+
+      .category-card {
+        padding: 1.5rem 1.25rem 1.25rem;
+      }
+    }
+
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--paper);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Form Meets Function <span>Journal</span>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html" class="active">Categories</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Explore</div>
+      <h1>Categories</h1>
+      <p class="lede">Every article on Form Meets Function is organised into one of six core sections. Browse by topic and find the ideas, materials, and spaces that inspire you.</p>
+      <p class="meta">Updated weekly — 6 active categories</p>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES CONTENT ========== -->
+  <section class="categories-section">
+    <div class="categories-inner">
+
+      <div class="section-intro">
+        <h2>All Sections</h2>
+        <p>From structural principles to the smallest material detail — our editorial is built around the disciplines that shape the built environment.</p>
+      </div>
+
+      <div class="category-grid">
+
+        <!-- Featured: Interior Design (wide) -->
+        <div class="category-featured">
+          <div class="featured-content">
+            <div class="post-count">42 Articles</div>
+            <h3><a href="index.html#interiors">Interior Design</a></h3>
+            <p>Residential and commercial interiors, colour theory, furniture selection, styling, and the art of making a room feel inevitable. We explore how thoughtful interior decisions shape daily life.</p>
+            <a href="index.html#interiors" class="read-more">Browse Interiors <span class="arrow">→</span></a>
+          </div>
+          <div class="featured-image">🛋️</div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="category-card">
+          <span class="category-icon">🏛️</span>
+          <div class="post-count">36 Articles</div>
+          <h3><a href="index.html#architecture">Architecture</a></h3>
+          <p>Building typologies, adaptive reuse, facade studies, and the dialogue between structure and site. We look at architecture as both a technical and cultural practice.</p>
+          <a href="index.html#architecture" class="read-more">Browse Architecture <span class="arrow">→</span></a>
+        </div>
+
+        <!-- Materials -->
+        <div class="category-card">
+          <span class="category-icon">🪵</span>
+          <div class="post-count">28 Articles</div>
+          <h3><a href="index.html#materials">Materials</a></h3>
+          <p>Timber, stone, concrete, metal, glass, and emerging composites. How material choice influences form, longevity, acoustics, and the sensory experience of space.</p>
+          <a href="index.html#materials" class="read-more">Browse Materials <span class="arrow">→</span></a>
+        </div>
+
+        <!-- Lighting -->
+        <div class="category-card">
+          <span class="category-icon">💡</span>
+          <div class="post-count">21 Articles</div>
+          <h3><a href="index.html#lighting">Lighting</a></h3>
+          <p>Natural and artificial light, luminaire design, circadian considerations, and the ways lighting defines atmosphere, task, and mood in every room.</p>
+          <a href="index.html#lighting" class="read-more">Browse Lighting <span class="arrow">→</span></a>
+        </div>
+
+        <!-- Space Planning -->
+        <div class="category-card">
+          <span class="category-icon">📐</span>
+          <div class="post-count">19 Articles</div>
+          <h3><a href="index.html#space-planning">Space Planning</a></h3>
+          <p>Circulation, proportion, zoning, and the geometry of human movement. The invisible frameworks that make a plan feel effortless and a room feel right.</p>
+          <a href="index.html#space-planning" class="read-more">Browse Space Planning <span class="arrow">→</span></a>
+        </div>
+
+        <!-- Design Principles (extra) -->
+        <div class="category-card">
+          <span class="category-icon">⚖️</span>
+          <div class="post-count">24 Articles</div>
+          <h3><a href="index.html#principles">Design Principles</a></h3>
+          <p>Balance, rhythm, scale, contrast, and the enduring rules — and when to break them. A running series on the theory behind good design decisions.</p>
+          <a href="index.html#principles" class="read-more">Browse Principles <span class="arrow">→</span></a>
+        </div>
+
+      </div>
+
+      <!-- CTA / Newsletter -->
+      <div class="category-cta">
+        <h3>Never Miss a Section</h3>
+        <p>Get a weekly digest of new articles across all six categories, delivered every Sunday morning.</p>
+        <a href="contact.html" class="btn">Subscribe to the Journal</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Form Meets Function <span>Journal</span></div>
+          <p>An independent editorial publication about interior design, architecture, and the spaces we inhabit. Published weekly.</p>
+        </div>
+        <div>
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#space-planning">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Form Meets Function. All rights reserved.</span>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categories — Form Meets Function",
+    "description": "Explore all categories on Form Meets Function — interior design, architecture, materials, lighting, space planning, and the principles of good design.",
+    "url": "https://formmeetsfunction.blog/categories.html",
+    "dateModified": "2025-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Form Meets Function",
+      "url": "https://formmeetsfunction.blog"
+    },
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "name": "Interior Design",
+        "url": "https://formmeetsfunction.blog/index.html#interiors"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Architecture",
+        "url": "https://formmeetsfunction.blog/index.html#architecture"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Materials",
+        "url": "https://formmeetsfunction.blog/index.html#materials"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Lighting",
+        "url": "https://formmeetsfunction.blog/index.html#lighting"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Space Planning",
+        "url": "https://formmeetsfunction.blog/index.html#space-planning"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Design Principles",
+        "url": "https://formmeetsfunction.blog/index.html#principles"
+      }
+    ]
+  }
+  </script>
+
+</body>
+</html>

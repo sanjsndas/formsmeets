@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Form Meets Function Journal</title>
+  <meta name="description" content="About Form Meets Function — an independent editorial publication exploring interior design, architecture, materials, and the principles of good design." />
+  <link rel="canonical" href="https://formmeetsfunction.blog/about.html" />
+  <meta property="og:title" content="About — Form Meets Function Journal" />
+  <meta property="og:description" content="An independent editorial publication about interior design, architecture, and the spaces we inhabit." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f9f7f4;
+      --paper-alt: #f2efe9;
+      --accent: #9b6b4b;
+      --accent-dark: #7a5238;
+      --border: #e2ddd6;
+      --muted: #6b6560;
+      --white: #ffffff;
+      --radius: 3px;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+      --max-width: 1200px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    .article-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #2e2a27;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container--narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      flex-wrap: wrap;
+      align-items: center;
+      list-style: none;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      font-weight: 500;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ---------- ABOUT HERO ---------- */
+    .about-hero {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 0 3rem;
+    }
+
+    .about-hero-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+
+    .about-hero .eyebrow {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .about-hero .lede {
+      font-size: 1.2rem;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: var(--font-serif);
+    }
+
+    /* ---------- ABOUT CONTENT ---------- */
+    .about-content {
+      padding: 3.5rem 0 2rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: start;
+      margin-bottom: 3rem;
+    }
+
+    .about-grid img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: var(--radius);
+    }
+
+    .about-grid h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-grid p {
+      font-size: 1.02rem;
+      color: #3a3532;
+      line-height: 1.8;
+    }
+
+    .about-grid .highlight-box {
+      background: var(--paper-alt);
+      border-left: 3px solid var(--accent);
+      padding: 1.5rem 1.75rem;
+      margin: 1.5rem 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .about-grid .highlight-box p {
+      margin-bottom: 0;
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* ---------- VALUES ---------- */
+    .values-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .values-section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .value-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem;
+      text-align: left;
+      transition: border-color 0.2s;
+    }
+
+    .value-card:hover {
+      border-color: var(--accent);
+    }
+
+    .value-card .value-num {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .value-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      font-family: var(--font-serif);
+    }
+
+    .value-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* ---------- TEAM ---------- */
+    .team-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .team-section h2 {
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .team-section .team-intro {
+      text-align: center;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      font-size: 1rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: var(--paper-alt);
+      border: 2px solid var(--border);
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--accent);
+      overflow: hidden;
+    }
+
+    .team-member .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-member h4 {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--ink);
+      margin-bottom: 0.2rem;
+    }
+
+    .team-member .role {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-member p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    /* ---------- MANIFESTO ---------- */
+    .manifesto-section {
+      padding: 3.5rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .manifesto-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .manifesto-inner h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .manifesto-inner blockquote {
+      margin: 2rem 0;
+      font-size: 1.25rem;
+    }
+
+    .manifesto-inner p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #3a3532;
+    }
+
+    /* ---------- CONTACT CTA ---------- */
+    .contact-cta {
+      background: var(--paper-alt);
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .contact-cta h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-cta p {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: var(--ink);
+      color: var(--white);
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-sans);
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .btn--outline {
+      background: transparent;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+    }
+
+    .btn--outline:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #cfc9c2;
+      padding: 3rem 0 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-grid h5 {
+      color: var(--white);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid ul li a {
+      color: #a8a29c;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid ul li a:hover {
+      color: var(--white);
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand span {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #8a847e;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2e2a27;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: #7a746e;
+    }
+
+    .footer-bottom a {
+      color: #7a746e;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--white);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .about-grid img {
+        height: 320px;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-hero .lede {
+        font-size: 1.05rem;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav {
+        gap: 1rem;
+        font-size: 0.78rem;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-grid img {
+        height: 240px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .about-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--paper);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Form Meets Function <span>Journal</span>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== ABOUT HERO ========== -->
+  <section class="about-hero">
+    <div class="about-hero-inner">
+      <div class="eyebrow">About the Journal</div>
+      <h1>Design is not decoration.<br />It is how we live.</h1>
+      <p class="lede">Form Meets Function is an independent editorial publication dedicated to the art and science of interior design and architecture — exploring the principles, materials, and stories behind the spaces we inhabit.</p>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT CONTENT ========== -->
+  <section class="about-content">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <h2>Our Mission</h2>
+          <p>We believe that good design is not a luxury — it is a fundamental part of how we live, work, and feel. Every issue, every article, every photograph is an argument for thoughtfulness over trend, for substance over surface.</p>
+          <p>Form Meets Function was founded on a simple premise: that the best-designed spaces are those where beauty and utility are inseparable. We don't chase fads. We explore principles that endure — proportion, light, material honesty, and the quiet intelligence of a well-considered plan.</p>
+          <div class="highlight-box">
+            <p>“The function of design is not to fill space, but to give it meaning. A room should feel inevitable — as if it could not have been any other way.”</p>
+          </div>
+          <p>Our editorial team brings together architects, interior designers, and writers who share a commitment to depth over virality. We publish long-form articles, practical guides, and critical perspectives — always grounded in research and real-world experience.</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="Modern living room with large windows and neutral tones — the essence of thoughtful design" />
+        </div>
+      </div>
+
+      <!-- VALUES -->
+      <div class="values-section">
+        <h2>What We Stand For</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-num">01</div>
+            <h3>Substance Over Trend</h3>
+            <p>We are not interested in what's fashionable this season. We are interested in what will still matter in twenty years — and why.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-num">02</div>
+            <h3>Clarity & Craft</h3>
+            <p>Every article is written with care, edited for precision, and designed to be read slowly. We respect your time and your intelligence.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-num">03</div>
+            <h3>Honest Materiality</h3>
+            <p>We celebrate materials for what they are — not what they imitate. Limestone, timber, concrete, glass: each has a truth worth telling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TEAM ========== -->
+  <section class="team-section">
+    <div class="container">
+      <h2>Editorial Team</h2>
+      <p class="team-intro">A small, independent team of writers and designers who care deeply about the built environment.</p>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="avatar">EM</div>
+          <h4>Elena Marsh</h4>
+          <div class="role">Editor-in-Chief</div>
+          <p>Interior designer and writer with 15 years of residential practice. Elena leads editorial vision and writes on color, light, and the psychology of space.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">MC</div>
+          <h4>Marcus Chen</h4>
+          <div class="role">Architecture Editor</div>
+          <p>Registered architect and critic. Marcus covers facade design, passive house principles, and the intersection of architecture and climate.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">PN</div>
+          <h4>Priya Nair</h4>
+          <div class="role">Interiors Editor</div>
+          <p>Priya writes on lighting, color psychology, and the details that make a room feel alive. She is a former lighting designer.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">JO</div>
+          <h4>James Okonkwo</h4>
+          <div class="role">Materials & Sustainability</div>
+          <p>James explores material innovation, reclaimed timber, and the environmental impact of design choices — always with a practical lens.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">SA</div>
+          <h4>Sofia Alvarez</h4>
+          <div class="role">Space Planning</div>
+          <p>Sofia is an urbanist and residential planner. She writes about small-space strategies, courtyard houses, and the future of the home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MANIFESTO ========== -->
+  <section class="manifesto-section">
+    <div class="manifesto-inner">
+      <h2>A Short Manifesto</h2>
+      <p>We believe that architecture and interior design are not separate disciplines, but a single continuum — from the street to the threshold to the chair you sit in at the end of the day.</p>
+      <blockquote>“Good design is honest. It does not pretend to be something it is not. It uses materials for their strengths, respects the climate it sits in, and serves the people who live there.”</blockquote>
+      <p>We believe in the quiet power of neutral palettes, the warmth of natural timber, the clarity of well-placed light. We believe that a well-designed room can change how you feel, how you rest, how you connect with others.</p>
+      <p>We are not here to sell you a lifestyle. We are here to share ideas — tested, researched, and written with care — that you can apply to your own home, your own practice, your own life.</p>
+      <p style="margin-top: 2rem; font-family: var(--font-serif); font-size: 1.1rem; color: var(--accent);">— The Form Meets Function Editorial Team</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT CTA ========== -->
+  <section class="contact-cta">
+    <div class="container">
+      <h3>Get in Touch</h3>
+      <p>We welcome pitches, feedback, and partnership inquiries. Reach us at <a href="mailto:editorial@formmeetsfunction.blog" style="color: var(--accent); text-decoration: underline;">editorial@formmeetsfunction.blog</a>.</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Form Meets Function <span>Journal</span></div>
+          <p>An independent editorial publication about interior design, architecture, and the spaces we inhabit. Published weekly.</p>
+        </div>
+        <div>
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#space-planning">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Form Meets Function. All rights reserved.</span>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About — Form Meets Function",
+    "description": "About Form Meets Function — an independent editorial publication exploring interior design, architecture, materials, and the principles of good design.",
+    "url": "https://formmeetsfunction.blog/about.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Form Meets Function",
+      "description": "An independent editorial publication about interior design and architecture.",
+      "foundingDate": "2020",
+      "url": "https://formmeetsfunction.blog",
+      "logo": "https://formmeetsfunction.blog/logo.png",
+      "employee": [
+        { "@type": "Person", "name": "Elena Marsh", "jobTitle": "Editor-in-Chief" },
+        { "@type": "Person", "name": "Marcus Chen", "jobTitle": "Architecture Editor" },
+        { "@type": "Person", "name": "Priya Nair", "jobTitle": "Interiors Editor" },
+        { "@type": "Person", "name": "James Okonkwo", "jobTitle": "Materials & Sustainability Editor" },
+        { "@type": "Person", "name": "Sofia Alvarez", "jobTitle": "Space Planning Editor" }
+      ]
+    }
+  }
+  </script>
+
+</body>
+</html>

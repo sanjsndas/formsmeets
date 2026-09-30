@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Form Meets Function Journal</title>
+  <meta name="description" content="Terms of Service for Form Meets Function — an independent editorial publication exploring interior design, architecture, materials, and the principles of good design." />
+  <link rel="canonical" href="https://formmeetsfunction.blog/terms.html" />
+  <meta property="og:title" content="Terms of Service — Form Meets Function Journal" />
+  <meta property="og:description" content="Terms of Service for Form Meets Function — an independent editorial publication about interior design, architecture, and the spaces we inhabit." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f9f7f4;
+      --paper-alt: #f2efe9;
+      --accent: #9b6b4b;
+      --accent-dark: #7a5238;
+      --border: #e2ddd6;
+      --muted: #6b6560;
+      --white: #ffffff;
+      --radius: 3px;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+      --max-width: 1200px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    .article-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #2e2a27;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container--narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      flex-wrap: wrap;
+      align-items: center;
+      list-style: none;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      font-weight: 500;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ---------- PAGE HERO ---------- */
+    .page-hero {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 0 3rem;
+    }
+
+    .page-hero-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+
+    .page-hero .eyebrow {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .page-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .page-hero .lede {
+      font-size: 1.2rem;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: var(--font-serif);
+    }
+
+    .page-hero .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 1.25rem;
+      font-family: var(--font-sans);
+    }
+
+    /* ---------- LEGAL CONTENT ---------- */
+    .legal-content {
+      padding: 3.5rem 0 2rem;
+    }
+
+    .legal-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .legal-inner h2 {
+      font-size: 1.6rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal-inner h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .legal-inner h3 {
+      font-size: 1.2rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-inner p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #3a3532;
+      margin-bottom: 1rem;
+    }
+
+    .legal-inner ul, .legal-inner ol {
+      margin: 0 0 1.25rem 1.5rem;
+      color: #3a3532;
+    }
+
+    .legal-inner li {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 0.4rem;
+    }
+
+    .legal-inner .notice-box {
+      background: var(--paper-alt);
+      border-left: 3px solid var(--accent);
+      padding: 1.5rem 1.75rem;
+      margin: 1.75rem 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .legal-inner .notice-box p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .legal-inner .notice-box strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .legal-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .legal-meta p {
+      margin-bottom: 0.25rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .legal-meta strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ---------- CONTACT CTA ---------- */
+    .contact-cta {
+      background: var(--paper-alt);
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .contact-cta h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-cta p {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: var(--ink);
+      color: var(--white);
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-sans);
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .btn--outline {
+      background: transparent;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+    }
+
+    .btn--outline:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #cfc9c2;
+      padding: 3rem 0 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-grid h5 {
+      color: var(--white);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid ul li a {
+      color: #a8a29c;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid ul li a:hover {
+      color: var(--white);
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand span {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #8a847e;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2e2a27;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: #7a746e;
+    }
+
+    .footer-bottom a {
+      color: #7a746e;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--white);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .page-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .page-hero .lede {
+        font-size: 1.05rem;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav {
+        gap: 1rem;
+        font-size: 0.78rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .page-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .legal-inner {
+        padding: 0 1rem;
+      }
+    }
+
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--paper);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Form Meets Function <span>Journal</span>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html" class="active">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Legal</div>
+      <h1>Terms of Service</h1>
+      <p class="lede">Please read these terms carefully before using Form Meets Function. By accessing or using our website, you agree to be bound by these terms.</p>
+      <p class="meta">Last updated: 1 January 2025</p>
+    </div>
+  </section>
+
+  <!-- ========== LEGAL CONTENT ========== -->
+  <section class="legal-content">
+    <div class="legal-inner">
+
+      <div class="legal-meta">
+        <p><strong>Effective Date:</strong> 1 January 2025</p>
+        <p><strong>Website:</strong> https://formmeetsfunction.blog</p>
+        <p><strong>Contact:</strong> legal@formmeetsfunction.blog</p>
+      </div>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using the Form Meets Function website (the "Site"), you agree to comply with and be bound by these Terms of Service (the "Terms"). If you do not agree to these Terms, you must not access or use the Site. These Terms apply to all visitors, readers, contributors, and others who access the Site.</p>
+      <p>We reserve the right to update or modify these Terms at any time without prior notice. Your continued use of the Site following any changes constitutes your acceptance of the revised Terms. We encourage you to review this page periodically.</p>
+
+      <h2>2. About the Site</h2>
+      <p>Form Meets Function is an independent editorial publication dedicated to interior design, architecture, materials, and the principles of good design. All content is provided for general informational and educational purposes only. It does not constitute professional architectural, interior design, legal, or financial advice.</p>
+
+      <h2>3. Use of Content</h2>
+      <h3>3.1 Intellectual Property</h3>
+      <p>All content on the Site — including but not limited to text, articles, photographs, illustrations, graphics, logos, and the design and arrangement of the Site — is the property of Form Meets Function or its content suppliers and is protected by international copyright, trademark, and other intellectual property laws.</p>
+
+      <h3>3.2 Permitted Use</h3>
+      <p>You may:</p>
+      <ul>
+        <li>Read, share, and link to our articles for personal, non-commercial purposes.</li>
+        <li>Quote short excerpts (up to 100 words) with clear attribution to Form Meets Function and a link to the original article.</li>
+        <li>Download or print individual pages for your own personal, non-commercial use.</li>
+      </ul>
+
+      <h3>3.3 Prohibited Use</h3>
+      <p>You may not:</p>
+      <ul>
+        <li>Reproduce, republish, distribute, or sell any content from the Site without prior written permission.</li>
+        <li>Modify, adapt, or create derivative works based on our content.</li>
+        <li>Use our content for commercial purposes, including training artificial intelligence models, without a separate license agreement.</li>
+        <li>Remove or alter any copyright, trademark, or other proprietary notices.</li>
+        <li>Use automated systems (bots, scrapers) to access or extract content from the Site in a manner that exceeds reasonable personal use.</li>
+      </ul>
+
+      <div class="notice-box">
+        <p><strong>Note on AI training:</strong> Use of our content to train machine learning or artificial intelligence models without explicit written consent is strictly prohibited.</p>
+      </div>
+
+      <h2>4. User Submissions</h2>
+      <p>We welcome pitches, comments, and feedback. By submitting any content to us — including article pitches, comments, photographs, or other materials — you grant Form Meets Function a non-exclusive, royalty-free, worldwide, perpetual license to use, reproduce, edit, publish, and distribute that content in any medium.</p>
+      <p>You represent and warrant that:</p>
+      <ul>
+        <li>You own or have the necessary rights to submit the content.</li>
+        <li>Your submission does not infringe the rights of any third party.</li>
+        <li>Your submission is not unlawful, defamatory, or otherwise objectionable.</li>
+      </ul>
+
+      <h2>5. Third-Party Links</h2>
+      <p>The Site may contain links to third-party websites, products, or services. These links are provided for your convenience only. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites. You access third-party sites at your own risk.</p>
+
+      <h2>6. Disclaimer of Warranties</h2>
+      <p>The Site and all content are provided on an "as is" and "as available" basis, without warranties of any kind, either express or implied. To the fullest extent permitted by law, we disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+      <p>We do not warrant that:</p>
+      <ul>
+        <li>The Site will be uninterrupted, secure, or error-free.</li>
+        <li>Any information on the Site is accurate, complete, or current.</li>
+        <li>Any defects will be corrected.</li>
+      </ul>
+
+      <h2>7. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by applicable law, Form Meets Function and its editors, contributors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Site or reliance on any content, even if advised of the possibility of such damages.</p>
+      <p>In no event shall our total liability to you exceed the amount you paid, if any, to access the Site.</p>
+
+      <h2>8. Indemnification</h2>
+      <p>You agree to indemnify, defend, and hold harmless Form Meets Function and its editors, contributors, and affiliates from any claims, liabilities, damages, losses, or expenses arising out of your use of the Site or your violation of these Terms.</p>
+
+      <h2>9. Privacy</h2>
+      <p>Your use of the Site is also governed by our <a href="privacy.html" style="color: var(--accent); text-decoration: underline;">Privacy Policy</a>. Please review it to understand how we collect, use, and protect your information.</p>
+
+      <h2>10. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the State of New York, United States, without regard to its conflict of law principles. Any dispute arising from these Terms shall be resolved exclusively in the state or federal courts located in New York County, New York.</p>
+
+      <h2>11. Severability</h2>
+      <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+
+      <h2>12. Entire Agreement</h2>
+      <p>These Terms, together with our Privacy Policy and any other legal notices published on the Site, constitute the entire agreement between you and Form Meets Function regarding your use of the Site.</p>
+
+      <h2>13. Contact</h2>
+      <p>If you have any questions about these Terms of Service, please contact us at:</p>
+      <p><strong>Form Meets Function — Legal Department</strong><br />
+      Email: <a href="mailto:legal@formmeetsfunction.blog" style="color: var(--accent); text-decoration: underline;">legal@formmeetsfunction.blog</a></p>
+
+      <p style="margin-top: 2.5rem; font-size: 0.9rem; color: var(--muted); font-style: italic;">These Terms of Service were last updated on 1 January 2025.</p>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT CTA ========== -->
+  <section class="contact-cta">
+    <div class="container">
+      <h3>Questions About These Terms?</h3>
+      <p>If you need clarification on any part of these Terms of Service, our legal team is happy to help. Reach us at <a href="mailto:legal@formmeetsfunction.blog" style="color: var(--accent); text-decoration: underline;">legal@formmeetsfunction.blog</a>.</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Form Meets Function <span>Journal</span></div>
+          <p>An independent editorial publication about interior design, architecture, and the spaces we inhabit. Published weekly.</p>
+        </div>
+        <div>
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#space-planning">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Form Meets Function. All rights reserved.</span>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms of Service — Form Meets Function",
+    "description": "Terms of Service for Form Meets Function — an independent editorial publication exploring interior design, architecture, materials, and the principles of good design.",
+    "url": "https://formmeetsfunction.blog/terms.html",
+    "dateModified": "2025-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Form Meets Function",
+      "url": "https://formmeetsfunction.blog"
+    }
+  }
+  </script>
+
+</body>
+</html>

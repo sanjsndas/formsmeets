@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookies Policy — Form Meets Function Journal</title>
+  <meta name="description" content="Cookies Policy for Form Meets Function Journal. Learn how we use cookies and similar technologies on our website." />
+  <link rel="canonical" href="https://formmeetsfunction.blog/cookies.html" />
+  <meta property="og:title" content="Cookies Policy — Form Meets Function Journal" />
+  <meta property="og:description" content="How we use cookies to improve your experience and respect your privacy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f9f7f4;
+      --paper-alt: #f2efe9;
+      --accent: #9b6b4b;
+      --accent-dark: #7a5238;
+      --border: #e2ddd6;
+      --muted: #6b6560;
+      --white: #ffffff;
+      --radius: 3px;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+      --max-width: 1200px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    ul, ol {
+      margin: 0 0 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container--narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      font-weight: 500;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ---------- COOKIES HERO ---------- */
+    .cookies-hero {
+      background: var(--white);
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cookies-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+      max-width: 700px;
+    }
+
+    .cookies-hero .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .cookies-hero .meta strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* ---------- COOKIES CONTENT ---------- */
+    .cookies-content {
+      padding: 3.5rem 0 4rem;
+      background: var(--paper);
+    }
+
+    .cookies-content .container--narrow {
+      background: var(--white);
+      padding: 3rem 2.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    }
+
+    .cookies-content h2 {
+      font-size: 1.7rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .cookies-content h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .cookies-content h3 {
+      font-size: 1.25rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .cookies-content p {
+      font-size: 1rem;
+      color: #2e2a27;
+      margin-bottom: 1rem;
+    }
+
+    .cookies-content ul,
+    .cookies-content ol {
+      margin: 0 0 1.25rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    .cookies-content li {
+      margin-bottom: 0.6rem;
+      color: #2e2a27;
+    }
+
+    .cookies-content .highlight-box {
+      background: var(--paper-alt);
+      padding: 1.5rem 1.75rem;
+      border-radius: var(--radius);
+      border-left: 3px solid var(--accent);
+      margin: 1.75rem 0;
+    }
+
+    .cookies-content .highlight-box p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .cookies-content .highlight-box strong {
+      color: var(--ink);
+    }
+
+    .cookies-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.95rem;
+    }
+
+    .cookies-content table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      background: var(--paper-alt);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      border-bottom: 2px solid var(--border);
+    }
+
+    .cookies-content table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: #2e2a27;
+      vertical-align: top;
+    }
+
+    .cookies-content table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .cookies-content .contact-block {
+      background: var(--paper-alt);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+      margin-top: 1.5rem;
+    }
+
+    .cookies-content .contact-block p {
+      margin-bottom: 0.5rem;
+      font-size: 0.98rem;
+    }
+
+    .cookies-content .contact-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cookies-content .contact-block a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .cookies-content .contact-block a:hover {
+      color: var(--accent-dark);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #cfc9c2;
+      padding: 3rem 0 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-grid h5 {
+      color: var(--white);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .footer-grid ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-grid ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid ul li a {
+      color: #a8a29c;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid ul li a:hover {
+      color: var(--white);
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand span {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #8a847e;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2e2a27;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: #7a746e;
+    }
+
+    .footer-bottom a {
+      color: #7a746e;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--white);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .cookies-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .cookies-content .container--narrow {
+        padding: 2rem 1.5rem;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav {
+        gap: 1rem;
+        font-size: 0.78rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .cookies-content table {
+        font-size: 0.85rem;
+      }
+
+      .cookies-content table th,
+      .cookies-content table td {
+        padding: 0.6rem 0.75rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .cookies-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .cookies-content .container--narrow {
+        padding: 1.5rem 1rem;
+      }
+
+      .cookies-content h2 {
+        font-size: 1.4rem;
+      }
+
+      .cookies-content table {
+        font-size: 0.8rem;
+      }
+
+      .cookies-content table th,
+      .cookies-content table td {
+        padding: 0.5rem;
+      }
+    }
+
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--paper);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Form Meets Function <span>Journal</span>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html" class="active">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== COOKIES HERO ========== -->
+  <section class="cookies-hero">
+    <div class="container">
+      <h1>Cookies Policy</h1>
+      <p class="meta"><strong>Last updated:</strong> March 1, 2025 &nbsp;·&nbsp; <strong>Effective:</strong> March 1, 2025</p>
+    </div>
+  </section>
+
+  <!-- ========== COOKIES CONTENT ========== -->
+  <section class="cookies-content">
+    <div class="container--narrow">
+
+      <p>This Cookies Policy explains how Form Meets Function Journal ("we," "us," or "our") uses cookies and similar tracking technologies on our website at <strong>formmeetsfunction.blog</strong> (the "Site"). It explains what these technologies are, why we use them, and your rights to control their use.</p>
+
+      <div class="highlight-box">
+        <p><strong>In short:</strong> We use a minimal set of cookies to keep the Site running smoothly and to understand how readers use our content. We do not use cookies for advertising or to sell your data. You can manage or disable cookies through your browser settings at any time.</p>
+      </div>
+
+      <h2>1. What Are Cookies?</h2>
+      <p>Cookies are small text files that are placed on your computer, smartphone, or other device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the site owners.</p>
+      <p>Cookies can be "persistent" (remaining on your device until they expire or you delete them) or "session" cookies (deleted when you close your browser). They can also be "first-party" (set by us) or "third-party" (set by a service provider we use).</p>
+
+      <h2>2. How We Use Cookies</h2>
+      <p>We use cookies for the following purposes:</p>
+      <ul>
+        <li><strong>Essential functionality:</strong> to ensure the Site operates correctly, including security features and basic navigation</li>
+        <li><strong>Analytics:</strong> to understand how visitors interact with our content, which helps us improve our articles and user experience</li>
+        <li><strong>Preferences:</strong> to remember your settings and choices, such as whether you've dismissed a notice</li>
+      </ul>
+      <p>We do <strong>not</strong> use cookies for targeted advertising, and we do not sell any data collected through cookies to third parties.</p>
+
+      <h2>3. Types of Cookies We Use</h2>
+      <p>The table below details the specific cookies we use on the Site:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Cookie Name</th>
+            <th>Type</th>
+            <th>Purpose</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>fmf_session</strong></td>
+            <td>Essential</td>
+            <td>Maintains your session state across page requests.</td>
+            <td>Session</td>
+          </tr>
+          <tr>
+            <td><strong>fmf_prefs</strong></td>
+            <td>Preference</td>
+            <td>Stores your cookie consent preferences.</td>
+            <td>12 months</td>
+          </tr>
+          <tr>
+            <td><strong>fmf_analytics</strong></td>
+            <td>Analytics</td>
+            <td>Aggregated, anonymized data about page views and navigation.</td>
+            <td>24 months</td>
+          </tr>
+          <tr>
+            <td><strong>fmf_csrf</strong></td>
+            <td>Essential</td>
+            <td>Security token to protect against cross-site request forgery.</td>
+            <td>Session</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>We may also use privacy-respecting analytics services that do not rely on cookies or that anonymize IP addresses. These services help us understand readership patterns without tracking individual users.</p>
+
+      <h2>4. Third-Party Cookies</h2>
+      <p>In some cases, we may use trusted third-party services that set their own cookies. These may include:</p>
+      <ul>
+        <li><strong>Hosting providers:</strong> for security and performance monitoring</li>
+        <li><strong>Analytics platforms:</strong> to measure site traffic and engagement (configured to respect privacy)</li>
+      </ul>
+      <p>We do not control third-party cookies. You should review the respective privacy and cookie policies of those providers for more information.</p>
+
+      <h2>5. Your Cookie Choices</h2>
+      <p>You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by:</p>
+      <ul>
+        <li><strong>Browser settings:</strong> Most web browsers allow you to control cookies through their settings. You can set your browser to refuse cookies or to alert you when cookies are being sent. Check your browser's help section for instructions.</li>
+        <li><strong>Opt-out tools:</strong> Some third-party analytics providers offer opt-out mechanisms. Please refer to their policies for details.</li>
+        <li><strong>Consent banner:</strong> If you are visiting from a region that requires consent (such as the EEA or UK), you will be presented with a cookie banner where you can accept or manage your preferences.</li>
+      </ul>
+      <p>Please note that if you disable cookies, some parts of the Site may not function properly, and your experience may be affected.</p>
+
+      <h2>6. Do Not Track Signals</h2>
+      <p>Some browsers include a "Do Not Track" (DNT) feature that signals to websites that you do not want to be tracked. Our Site does not currently respond to DNT signals, as there is no consistent industry standard for compliance. However, we do not engage in cross-site tracking for advertising purposes.</p>
+
+      <h2>7. Changes to This Cookies Policy</h2>
+      <p>We may update this Cookies Policy from time to time to reflect changes in our practices, technology, or legal requirements. When we make material changes, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have questions or concerns about this Cookies Policy or our use of cookies, please contact us:</p>
+
+      <div class="contact-block">
+        <p><strong>Form Meets Function Journal</strong></p>
+        <p>Privacy Inquiries: <a href="mailto:privacy@formmeetsfunction.blog">privacy@formmeetsfunction.blog</a></p>
+        <p>General Inquiries: <a href="mailto:hello@formmeetsfunction.blog">hello@formmeetsfunction.blog</a></p>
+        <p>Mailing Address: P.O. Box 4821, Portland, OR 97208</p>
+      </div>
+
+      <hr />
+
+      <p style="font-size: 0.9rem; color: var(--muted);">This Cookies Policy is provided for informational purposes and does not constitute legal advice. For guidance on compliance with data protection laws, please consult a qualified attorney.</p>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Form Meets Function <span>Journal</span></div>
+          <p>An independent editorial publication about interior design, architecture, and the spaces we inhabit. Published weekly.</p>
+        </div>
+        <div>
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#space-planning">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Form Meets Function. All rights reserved.</span>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cookies Policy — Form Meets Function Journal",
+    "description": "Cookies Policy for Form Meets Function Journal. Learn how we use cookies and similar technologies on our website.",
+    "url": "https://formmeetsfunction.blog/cookies.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Form Meets Function",
+      "email": "privacy@formmeetsfunction.blog",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Privacy Inquiries",
+        "email": "privacy@formmeetsfunction.blog"
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>

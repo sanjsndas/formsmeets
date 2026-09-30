@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disclaimer — Form Meets Function Journal</title>
+  <meta name="description" content="Disclaimer for Form Meets Function Journal. Read about the limitations of liability and the informational purpose of our content." />
+  <link rel="canonical" href="https://formmeetsfunction.blog/disclaimer.html" />
+  <meta property="og:title" content="Disclaimer — Form Meets Function Journal" />
+  <meta property="og:description" content="Important legal information about the content on our website." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f9f7f4;
+      --paper-alt: #f2efe9;
+      --accent: #9b6b4b;
+      --accent-dark: #7a5238;
+      --border: #e2ddd6;
+      --muted: #6b6560;
+      --white: #ffffff;
+      --radius: 3px;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+      --max-width: 1200px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    ul, ol {
+      margin: 0 0 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container--narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      font-weight: 500;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ---------- DISCLAIMER HERO ---------- */
+    .disclaimer-hero {
+      background: var(--white);
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .disclaimer-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+      max-width: 700px;
+    }
+
+    .disclaimer-hero .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .disclaimer-hero .meta strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* ---------- DISCLAIMER CONTENT ---------- */
+    .disclaimer-content {
+      padding: 3.5rem 0 4rem;
+      background: var(--paper);
+    }
+
+    .disclaimer-content .container--narrow {
+      background: var(--white);
+      padding: 3rem 2.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    }
+
+    .disclaimer-content h2 {
+      font-size: 1.7rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .disclaimer-content h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .disclaimer-content h3 {
+      font-size: 1.25rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .disclaimer-content p {
+      font-size: 1rem;
+      color: #2e2a27;
+      margin-bottom: 1rem;
+    }
+
+    .disclaimer-content ul,
+    .disclaimer-content ol {
+      margin: 0 0 1.25rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    .disclaimer-content li {
+      margin-bottom: 0.6rem;
+      color: #2e2a27;
+    }
+
+    .disclaimer-content .highlight-box {
+      background: var(--paper-alt);
+      padding: 1.5rem 1.75rem;
+      border-radius: var(--radius);
+      border-left: 3px solid var(--accent);
+      margin: 1.75rem 0;
+    }
+
+    .disclaimer-content .highlight-box p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .disclaimer-content .highlight-box strong {
+      color: var(--ink);
+    }
+
+    .disclaimer-content .contact-block {
+      background: var(--paper-alt);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+      margin-top: 1.5rem;
+    }
+
+    .disclaimer-content .contact-block p {
+      margin-bottom: 0.5rem;
+      font-size: 0.98rem;
+    }
+
+    .disclaimer-content .contact-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .disclaimer-content .contact-block a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .disclaimer-content .contact-block a:hover {
+      color: var(--accent-dark);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #cfc9c2;
+      padding: 3rem 0 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-grid h5 {
+      color: var(--white);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .footer-grid ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-grid ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid ul li a {
+      color: #a8a29c;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid ul li a:hover {
+      color: var(--white);
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand span {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #8a847e;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2e2a27;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: #7a746e;
+    }
+
+    .footer-bottom a {
+      color: #7a746e;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--white);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .disclaimer-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .disclaimer-content .container--narrow {
+        padding: 2rem 1.5rem;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav {
+        gap: 1rem;
+        font-size: 0.78rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .disclaimer-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .disclaimer-content .container--narrow {
+        padding: 1.5rem 1rem;
+      }
+
+      .disclaimer-content h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--paper);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Form Meets Function <span>Journal</span>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html" class="active">Disclaimer</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== DISCLAIMER HERO ========== -->
+  <section class="disclaimer-hero">
+    <div class="container">
+      <h1>Disclaimer</h1>
+      <p class="meta"><strong>Last updated:</strong> March 1, 2025 &nbsp;·&nbsp; <strong>Effective:</strong> March 1, 2025</p>
+    </div>
+  </section>
+
+  <!-- ========== DISCLAIMER CONTENT ========== -->
+  <section class="disclaimer-content">
+    <div class="container--narrow">
+
+      <p>The information provided by Form Meets Function Journal ("we," "us," or "our") on <strong>formmeetsfunction.blog</strong> (the "Site") is for general informational and educational purposes only. All information on the Site is provided in good faith, and we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, or completeness of any information on the Site.</p>
+
+      <div class="highlight-box">
+        <p><strong>Please note:</strong> The content on this Site is not professional advice. You should not rely solely on the information provided here for making decisions about design, architecture, construction, or any other professional matter. Always consult with a qualified professional for advice specific to your situation.</p>
+      </div>
+
+      <h2>1. No Professional Advice</h2>
+      <p>The content published on Form Meets Function Journal is intended for general informational purposes only. It is not intended to be a substitute for professional advice, whether architectural, engineering, interior design, legal, financial, or otherwise.</p>
+      <p>While we strive to provide accurate and up-to-date information, the fields of interior design, architecture, and construction are complex and subject to local regulations, building codes, and individual circumstances. You should always seek the advice of a qualified professional regarding any specific project or issue.</p>
+
+      <h2>2. External Links Disclaimer</h2>
+      <p>The Site may contain links to other websites or content belonging to or originating from third parties. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us.</p>
+      <p>We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the Site. We will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services.</p>
+
+      <h2>3. Accuracy of Information</h2>
+      <p>We make every effort to ensure that the information on the Site is accurate and current. However, we cannot guarantee that all information is free from errors or omissions. The content may become outdated over time, and we are under no obligation to update it.</p>
+      <ul>
+        <li><strong>Product recommendations:</strong> Any product mentions or recommendations are based on our editorial opinion and research at the time of publication. We are not responsible for changes in product availability, pricing, or quality.</li>
+        <li><strong>Design trends:</strong> Design trends and styles evolve. What was accurate or popular at the time of writing may not be current or appropriate for your specific needs.</li>
+        <li><strong>Technical details:</strong> Measurements, materials, and construction methods mentioned in articles are for illustrative purposes and should not be relied upon without verification by a qualified professional.</li>
+      </ul>
+
+      <h2>4. Affiliate Disclosure</h2>
+      <p>Form Meets Function Journal may participate in affiliate marketing programs. This means that we may earn a commission if you click on certain links and make a purchase. This comes at no additional cost to you and helps support our editorial work.</p>
+      <p>We only recommend products or services that we believe may be of interest to our readers. However, we are not responsible for the quality, performance, or satisfaction of any products purchased through affiliate links. Any issues with products or services should be directed to the respective seller or manufacturer.</p>
+
+      <h2>5. Limitation of Liability</h2>
+      <p>Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Site or reliance on any information provided on the Site. Your use of the Site and your reliance on any information on the Site is solely at your own risk.</p>
+      <p>We shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to, use of, or inability to use the Site or any content therein.</p>
+
+      <h2>6. Views Expressed</h2>
+      <p>The views and opinions expressed on the Site are those of the authors and do not necessarily reflect the official policy or position of any other agency, organization, employer, or company. Any content provided by our authors is their opinion and is not intended to malign any religion, ethnic group, club, organization, company, individual, or anyone or anything.</p>
+
+      <h2>7. Copyright Notice</h2>
+      <p>All content on this Site, including text, images, graphics, and logos, is the property of Form Meets Function Journal unless otherwise noted. Unauthorized use, reproduction, or distribution of any content from this Site is strictly prohibited without prior written permission.</p>
+      <p>Images from third-party sources (such as Unsplash) are used in accordance with their respective licenses. If you believe any content on our Site infringes upon your copyright, please contact us immediately so we can address the issue.</p>
+
+      <h2>8. Changes to This Disclaimer</h2>
+      <p>We reserve the right to update or change this Disclaimer at any time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this Disclaimer periodically to stay informed about how we are protecting your interests.</p>
+
+      <h2>9. Contact Us</h2>
+      <p>If you have any questions about this Disclaimer, please contact us:</p>
+
+      <div class="contact-block">
+        <p><strong>Form Meets Function Journal</strong></p>
+        <p>Email: <a href="mailto:legal@formmeetsfunction.blog">legal@formmeetsfunction.blog</a></p>
+        <p>General Inquiries: <a href="mailto:hello@formmeetsfunction.blog">hello@formmeetsfunction.blog</a></p>
+        <p>Mailing Address: P.O. Box 4821, Portland, OR 97208</p>
+      </div>
+
+      <hr />
+
+      <p style="font-size: 0.9rem; color: var(--muted);">This Disclaimer is provided for informational purposes and does not constitute legal advice. For guidance on compliance with applicable laws, please consult a qualified attorney.</p>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Form Meets Function <span>Journal</span></div>
+          <p>An independent editorial publication about interior design, architecture, and the spaces we inhabit. Published weekly.</p>
+        </div>
+        <div>
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#space-planning">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Form Meets Function. All rights reserved.</span>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disclaimer — Form Meets Function Journal",
+    "description": "Disclaimer for Form Meets Function Journal. Read about the limitations of liability and the informational purpose of our content.",
+    "url": "https://formmeetsfunction.blog/disclaimer.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Form Meets Function",
+      "email": "legal@formmeetsfunction.blog",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Legal Inquiries",
+        "email": "legal@formmeetsfunction.blog"
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>

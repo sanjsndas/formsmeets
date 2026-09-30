@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Form Meets Function Journal</title>
+  <meta name="description" content="Privacy Policy for Form Meets Function Journal. Learn how we collect, use, and protect your personal information." />
+  <link rel="canonical" href="https://formmeetsfunction.blog/privacy.html" />
+  <meta property="og:title" content="Privacy Policy — Form Meets Function Journal" />
+  <meta property="og:description" content="How we handle your data with care and transparency." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f9f7f4;
+      --paper-alt: #f2efe9;
+      --accent: #9b6b4b;
+      --accent-dark: #7a5238;
+      --border: #e2ddd6;
+      --muted: #6b6560;
+      --white: #ffffff;
+      --radius: 3px;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+      --max-width: 1200px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    ul, ol {
+      margin: 0 0 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      color: #2e2a27;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container--narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.75rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      font-weight: 500;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ---------- PRIVACY HERO ---------- */
+    .privacy-hero {
+      background: var(--white);
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+      max-width: 700px;
+    }
+
+    .privacy-hero .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .privacy-hero .meta strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* ---------- PRIVACY CONTENT ---------- */
+    .privacy-content {
+      padding: 3.5rem 0 4rem;
+      background: var(--paper);
+    }
+
+    .privacy-content .container--narrow {
+      background: var(--white);
+      padding: 3rem 2.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    }
+
+    .privacy-content h2 {
+      font-size: 1.7rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .privacy-content h3 {
+      font-size: 1.25rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .privacy-content p {
+      font-size: 1rem;
+      color: #2e2a27;
+      margin-bottom: 1rem;
+    }
+
+    .privacy-content ul,
+    .privacy-content ol {
+      margin: 0 0 1.25rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    .privacy-content li {
+      margin-bottom: 0.6rem;
+      color: #2e2a27;
+    }
+
+    .privacy-content .highlight-box {
+      background: var(--paper-alt);
+      padding: 1.5rem 1.75rem;
+      border-radius: var(--radius);
+      border-left: 3px solid var(--accent);
+      margin: 1.75rem 0;
+    }
+
+    .privacy-content .highlight-box p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .privacy-content .highlight-box strong {
+      color: var(--ink);
+    }
+
+    .privacy-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.95rem;
+    }
+
+    .privacy-content table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      background: var(--paper-alt);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      border-bottom: 2px solid var(--border);
+    }
+
+    .privacy-content table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: #2e2a27;
+      vertical-align: top;
+    }
+
+    .privacy-content table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .privacy-content .contact-block {
+      background: var(--paper-alt);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+      margin-top: 1.5rem;
+    }
+
+    .privacy-content .contact-block p {
+      margin-bottom: 0.5rem;
+      font-size: 0.98rem;
+    }
+
+    .privacy-content .contact-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-content .contact-block a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .privacy-content .contact-block a:hover {
+      color: var(--accent-dark);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #cfc9c2;
+      padding: 3rem 0 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-grid h5 {
+      color: var(--white);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 1rem;
+      font-family: var(--font-sans);
+    }
+
+    .footer-grid ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-grid ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid ul li a {
+      color: #a8a29c;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid ul li a:hover {
+      color: var(--white);
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand span {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #8a847e;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2e2a27;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: #7a746e;
+    }
+
+    .footer-bottom a {
+      color: #7a746e;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--white);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .privacy-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .privacy-content .container--narrow {
+        padding: 2rem 1.5rem;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav {
+        gap: 1rem;
+        font-size: 0.78rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .privacy-content table {
+        font-size: 0.85rem;
+      }
+
+      .privacy-content table th,
+      .privacy-content table td {
+        padding: 0.6rem 0.75rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .privacy-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .privacy-content .container--narrow {
+        padding: 1.5rem 1rem;
+      }
+
+      .privacy-content h2 {
+        font-size: 1.4rem;
+      }
+
+      .privacy-content table {
+        font-size: 0.8rem;
+      }
+
+      .privacy-content table th,
+      .privacy-content table td {
+        padding: 0.5rem;
+      }
+    }
+
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--paper);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Form Meets Function <span>Journal</span>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html" class="active">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== PRIVACY HERO ========== -->
+  <section class="privacy-hero">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="meta"><strong>Last updated:</strong> March 1, 2025 &nbsp;·&nbsp; <strong>Effective:</strong> March 1, 2025</p>
+    </div>
+  </section>
+
+  <!-- ========== PRIVACY CONTENT ========== -->
+  <section class="privacy-content">
+    <div class="container--narrow">
+
+      <p>At Form Meets Function Journal ("we," "us," or "our"), we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at <strong>formmeetsfunction.blog</strong> (the "Site"). Please read this policy carefully. By using the Site, you agree to the practices described here.</p>
+
+      <div class="highlight-box">
+        <p><strong>In short:</strong> We collect minimal data, we never sell your personal information, and we use analytics only to understand how our content is being read. You have full control over your data and can contact us at any time to access, correct, or delete it.</p>
+      </div>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>Information you provide to us</h3>
+      <p>We collect information that you voluntarily provide when you interact with the Site, such as when you:</p>
+      <ul>
+        <li>Submit a contact form or pitch via our <a href="contact.html">Contact page</a></li>
+        <li>Subscribe to our newsletter (if applicable)</li>
+        <li>Comment on articles or engage with our content</li>
+        <li>Respond to surveys or provide feedback</li>
+      </ul>
+      <p>This information may include your <strong>name, email address, subject matter, and message content</strong>. We only collect what is necessary to respond to your inquiry or provide the service you requested.</p>
+
+      <h3>Information collected automatically</h3>
+      <p>When you visit the Site, certain information is collected automatically through cookies and similar technologies. This may include:</p>
+      <ul>
+        <li><strong>Log data:</strong> IP address, browser type, operating system, referring URLs, pages viewed, and timestamps</li>
+        <li><strong>Device information:</strong> screen size, device type, and general location (country/city level)</li>
+        <li><strong>Usage data:</strong> how you navigate and interact with our content</li>
+      </ul>
+      <p>This data is aggregated and does not personally identify you. We use it to improve the Site, understand readership patterns, and ensure technical performance.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <ul>
+        <li><strong>To respond to inquiries:</strong> answering your messages, pitches, and partnership requests</li>
+        <li><strong>To improve our content:</strong> understanding which articles resonate with our audience</li>
+        <li><strong>To maintain security:</strong> detecting and preventing fraudulent or malicious activity</li>
+        <li><strong>To comply with legal obligations:</strong> responding to lawful requests and protecting our rights</li>
+        <li><strong>To send occasional updates:</strong> only if you have explicitly opted in to receive them</li>
+      </ul>
+      <p>We do <strong>not</strong> sell, rent, or trade your personal information to third parties for marketing purposes. Ever.</p>
+
+      <h2>3. Cookies & Tracking Technologies</h2>
+      <p>We use cookies and similar tracking technologies to enhance your experience on the Site. These include:</p>
+      <ul>
+        <li><strong>Essential cookies:</strong> required for the Site to function properly (e.g., security, basic navigation)</li>
+        <li><strong>Analytics cookies:</strong> help us understand how visitors use the Site (we use privacy-respecting analytics)</li>
+        <li><strong>Preference cookies:</strong> remember your settings and preferences for future visits</li>
+      </ul>
+      <p>You can control cookies through your browser settings. Disabling certain cookies may affect your experience on the Site. For more details, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+      <h2>4. Third-Party Services</h2>
+      <p>We may use trusted third-party services to operate the Site and deliver our content. These providers have access to your information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose. These may include:</p>
+      <ul>
+        <li>Web hosting and infrastructure providers</li>
+        <li>Privacy-focused analytics platforms</li>
+        <li>Email service providers (for contact form submissions)</li>
+        <li>Content delivery networks (CDNs) for performance</li>
+      </ul>
+      <p>Some articles may contain links to external websites. We are not responsible for the privacy practices of those sites and encourage you to review their policies.</p>
+
+      <h2>5. Data Retention</h2>
+      <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy. Specifically:</p>
+      <ul>
+        <li><strong>Contact form submissions:</strong> retained for up to 24 months to allow for follow-up conversations, then deleted</li>
+        <li><strong>Analytics data:</strong> retained in aggregated, anonymized form indefinitely</li>
+        <li><strong>Email correspondence:</strong> retained as long as needed to resolve your inquiry, then deleted unless you request otherwise</li>
+      </ul>
+
+      <h2>6. Your Rights & Choices</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Right</th>
+            <th>What it means</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Access</strong></td>
+            <td>You can request a copy of the personal data we hold about you.</td>
+          </tr>
+          <tr>
+            <td><strong>Correction</strong></td>
+            <td>You can ask us to correct inaccurate or incomplete information.</td>
+          </tr>
+          <tr>
+            <td><strong>Deletion</strong></td>
+            <td>You can request that we delete your personal data, subject to legal obligations.</td>
+          </tr>
+          <tr>
+            <td><strong>Objection</strong></td>
+            <td>You can object to certain processing activities, such as analytics.</td>
+          </tr>
+          <tr>
+            <td><strong>Portability</strong></td>
+            <td>You can request your data in a structured, machine-readable format.</td>
+          </tr>
+          <tr>
+            <td><strong>Withdraw Consent</strong></td>
+            <td>Where processing is based on consent, you can withdraw it at any time.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>To exercise any of these rights, please contact us using the details at the end of this policy. We will respond within 30 days.</p>
+
+      <h2>7. Data Security</h2>
+      <p>We take reasonable technical and organizational measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+      <ul>
+        <li>SSL/TLS encryption for all data transmitted to and from the Site</li>
+        <li>Regular security reviews of our infrastructure</li>
+        <li>Limited access to personal data by authorized personnel only</li>
+        <li>Use of reputable, security-conscious service providers</li>
+      </ul>
+      <p>However, no method of transmission over the Internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>The Site is not directed to individuals under the age of 16. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us immediately and we will take steps to delete it.</p>
+
+      <h2>9. International Visitors</h2>
+      <p>Our Site is operated from the United States. If you are accessing the Site from outside the U.S., please be aware that your information may be transferred to, stored, and processed in the U.S., where data protection laws may differ from those in your jurisdiction. By using the Site, you consent to this transfer.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. When we make material changes, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+
+      <h2>11. Contact Us</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please reach out to us:</p>
+
+      <div class="contact-block">
+        <p><strong>Form Meets Function Journal</strong></p>
+        <p>Privacy Inquiries: <a href="mailto:privacy@formmeetsfunction.blog">privacy@formmeetsfunction.blog</a></p>
+        <p>General Inquiries: <a href="mailto:hello@formmeetsfunction.blog">hello@formmeetsfunction.blog</a></p>
+        <p>Mailing Address: P.O. Box 4821, Portland, OR 97208</p>
+      </div>
+
+      <hr />
+
+      <p style="font-size: 0.9rem; color: var(--muted);">This Privacy Policy is provided for informational purposes and does not constitute legal advice. If you require legal guidance regarding data protection compliance, please consult a qualified attorney.</p>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Form Meets Function <span>Journal</span></div>
+          <p>An independent editorial publication about interior design, architecture, and the spaces we inhabit. Published weekly.</p>
+        </div>
+        <div>
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#space-planning">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Form Meets Function. All rights reserved.</span>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy — Form Meets Function Journal",
+    "description": "Privacy Policy for Form Meets Function Journal. Learn how we collect, use, and protect your personal information.",
+    "url": "https://formmeetsfunction.blog/privacy.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Form Meets Function",
+      "email": "privacy@formmeetsfunction.blog",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Privacy Inquiries",
+        "email": "privacy@formmeetsfunction.blog"
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>
